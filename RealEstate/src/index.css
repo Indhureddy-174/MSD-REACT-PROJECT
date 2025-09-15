@@ -1,0 +1,13 @@
+/* Global reset + body background (copy of your original) */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://dharmainfraproject.com/wp-content/uploads/2023/03/Cm-B-N8-scaled-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+  min-height: 100vh;
+}
