@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://qurr8u-3000.bytexl.dev/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="./Vite + React_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="https://qurr8u-3000.bytexl.dev/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite + React</title>
+  <style type="text/css" data-vite-dev-id="/home/workspace/my-project/src/App.css">/* Styles converted from your original <style> block */
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Cards */
+.card {
+  background: #fffceddd;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 { color: #2c3e50; margin-bottom: 12px; font-size: 1.8rem; }
+
+input, select, button, textarea {
+  padding: 10px;
+  margin: 8px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 5px #3498dba0;
+}
+
+.btn {
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.25s ease;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn:hover { background: #2980b9; }
+
+.hidden { display: none; }
+
+img { max-width: 100%; border-radius: 8px; margin-top: 10px; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+table, th, td { border: 1px solid #ccc; }
+th, td { padding: 8px; text-align: left; }
+th { background: #f0f0f0; }
+
+/* NAV */
+nav {
+  background: rgba(44, 62, 80, 0.95);
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav .logo { font-size: 1.5em; font-weight: bold; }
+nav .nav-links a {
+  color: white; margin-left: 20px; text-decoration: none; font-weight: bold;
+  transition: color 0.2s; cursor: pointer;
+}
+nav .nav-links a:hover {
+  color: #f39c12;
+  text-decoration: underline;
+}
+
+/* small responsive tweaks */
+@media (max-width: 640px) {
+  .container { padding: 18px; margin: 20px 12px; }
+  nav { flex-direction: column; gap: 8px; align-items: flex-start; }
+  nav .nav-links { display: flex; flex-wrap: wrap; gap: 8px; }
+}
+</style><style type="text/css" data-vite-dev-id="/home/workspace/my-project/src/index.css">/* Global reset + body background (copy of your original) */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://dharmainfraproject.com/wp-content/uploads/2023/03/Cm-B-N8-scaled-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+  min-height: 100vh;
+}
+</style></head>
+  <body>
+    <div id="root"><nav id="navbar" class=""><div class="logo">🏠 Real Estate</div><div class="nav-links" id="nav-links"><a href="https://qurr8u-3000.bytexl.dev/#!">Info</a><a href="https://qurr8u-3000.bytexl.dev/#!">Seller Dashboard</a><a href="https://qurr8u-3000.bytexl.dev/#!">Profile</a><a href="https://qurr8u-3000.bytexl.dev/#!">Area</a><a href="https://qurr8u-3000.bytexl.dev/#!">Integration</a><a href="https://qurr8u-3000.bytexl.dev/#!">Contact Seller</a><a href="https://qurr8u-3000.bytexl.dev/#!">Logout</a></div></nav><div class="container"><div id="seller-dashboard"><div class="card"><h2>Seller Dashboard 👩‍💼</h2><img src="./Vite + React_files/seller-dashboard.jpg" alt="Seller Dashboard"><p>Manage your property listings, respond to buyers, and track performance.</p><h3>🏡 Insert New Property</h3><input type="text" id="property-title" placeholder="Title" value=""><textarea id="property-description" placeholder="Description"></textarea><input type="number" id="property-price" placeholder="Price" value=""><select id="property-type"><option value="">Property Type</option><option value="House">House</option><option value="Plot">Plot</option><option value="Apartment">Apartment</option><option value="Commercial">Commercial</option><option value="Agricultural">Agricultural</option></select><input type="file" id="property-image"><input type="text" id="property-location" placeholder="Location" value=""><button class="btn " type="button">Add Property</button><h3>⚙️ Manage Listings</h3><table><thead><tr><th>Property</th><th>Action</th></tr></thead><tbody id="listings-body"><tr><td>2BHK Apartment in Hyderabad</td><td><button class="btn " type="button">Update</button><button class="btn " type="button">Delete</button></td></tr></tbody></table><h3>📩 Buyer Enquiries</h3><ul><li>Ravi Kumar: Interested in 2BHK Apartment.</li><li>Anjali Sharma: Asked for price negotiation.</li></ul><h3>📊 Sales Analytics</h3><p>Views: 120 | Buyer Interests: 15 | Successful Deals: 3</p></div></div></div><footer style="text-align: center; margin-top: 20px; padding: 10px; font-size: 14px; color: white; font-weight: bold;">© 2025 Real Estate Management System. All rights reserved.</footer></div>
+    <script type="module" src="./Vite + React_files/main.jsx"></script>
+  
+
+</body></html>
